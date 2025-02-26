@@ -1,5 +1,7 @@
 package br.senai.sp.jandira.clinica;
 
+import java.time.LocalDate;
+
 import br.senai.sp.jandira.clinica.model.Paciente;
 
 public class Clinica {
@@ -10,18 +12,22 @@ public class Clinica {
 		
 
 		Paciente p1 = new Paciente();
-		p1.nome = "Felps";
-		p1.altura = 1.81;
-		p1.peso = 95;
-		p1.telefone = "119637375937";
-		p1.dataNascimento = LocalDate.of(2003, 7, 15);	
+		p1.setNome("Felps");
+		p1.setAltura(1.81);
+		p1.setPeso(95);
+		p1.setTelefone("119637375937");
+		p1.setDataNascimento(LocalDate.of(2003, 7, 15));	
 		
 		Paciente p2 = new Paciente();
-		p2.nome = "Felipe";
-		p2.altura = 1.81;
-		p2.peso = 1..81;
-		p2.telefone = "119748988847"
+		p2.setNome("Felipe");
+		p2.setAltura(1.81);
+		p2.setPeso(92);
+		
+		p2.setTelefone("119748988847");
 				
+		p1.mostrarFichaDoPaciente();
+		p2.mostrarFichaDoPaciente();
+		
 
 		
 		
